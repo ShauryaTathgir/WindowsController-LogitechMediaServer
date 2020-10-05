@@ -30,7 +30,7 @@ def on_press(key):
         key.char
     except AttributeError:
         if(key == keyboard.Key.f9):
-            listen = !listen
+            listen = not listen
             sleep(0.5)
         elif(listen):
             if(key == keyboard.Key.media_play_pause):
