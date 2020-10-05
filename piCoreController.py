@@ -26,6 +26,7 @@ def shutdown():
     get('http://' + PLAYER_IP + '/cgi-bin/main.cgi?ACTION=shutdown')
     
 def on_press(key):
+    global listen
     try:
         key.char
     except AttributeError:
